@@ -10,7 +10,7 @@
           lg="3"
           xl="3"
         >
-          <v-btn class="button-register" color="primary" x-large>{{$ml.get('register')}}</v-btn>
+          <v-btn class="button-register" color="primary" x-large to="/register">{{$ml.get('register')}}</v-btn>
           <v-select
             class="select"
             :items="items"
@@ -59,7 +59,7 @@
           @click:append="showPassword = !showPassword"
         ></v-text-field>
 
-        <v-btn class="button" color="primary" x-large v-text="$ml.get('login')">Entrar</v-btn>
+        <v-btn class="button" color="primary" x-large v-text="$ml.get('login')"></v-btn>
       </v-form>
       </v-col>
     </v-row>
@@ -164,5 +164,6 @@
 
   .button-register {
     margin: 0px 10px;
+    width: 160px;
   }
 </style>
